@@ -11,8 +11,8 @@ public class Gato extends Animal implements Comestible {
 	private int numVidas;
 	private List<Vacuna> vacunas;
 	
-	public Gato(int patas, boolean vuela, float peso, String especie, int numVidas, List<Vacuna> vacunas, float largosBigotes) {
-		super(patas, vuela, largosBigotes, especie);
+	public Gato(String nickName, String name, int patas, boolean vuela, float peso, String especie, int numVidas, List<Vacuna> vacunas, float largosBigotes) {
+		super(nickName, name, patas, vuela, largosBigotes, especie);
 		this.numVidas = numVidas;
 		this.vacunas = vacunas;
 		this.largoBigotes = largosBigotes;

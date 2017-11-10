@@ -4,8 +4,8 @@ import com.joan.herencia.interfaces.Comestible;
 
 public class Gallina extends Animal implements Comestible {
 
-	public Gallina(int patas, boolean vuela, float peso, String especie) {
-		super(patas, vuela, peso, especie);
+	public Gallina(String nickName, String name, int patas, boolean vuela, float peso, String especie) {
+		super(nickName, name, patas, vuela, peso, especie);
 			
 	}
 

@@ -4,16 +4,36 @@ import com.joan.herencia.interfaces.Comestible;
 
 public class Animal {
 		
+		private String nickName;
+		private String name;
 		private int patas;
 		private boolean vuela;
 		private float peso;
 		private String especie;
 		
-	public Animal(int patas, boolean vuela, float peso, String especie) {
+	public Animal(String nickName, String name, int patas, boolean vuela, float peso, String especie) {
+		this.nickName = nickName;
+		this.name = name;
 		this.patas = patas;
 		this.vuela = vuela;
 		this.peso = peso;
 		this.especie = especie;
+	}
+
+	public String getNickName() {
+		return nickName;
+	}
+
+	public void setNickName(String nickName) {
+		this.nickName = nickName;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	public void eat(Comestible elBocadito) {
